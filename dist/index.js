@@ -83,58 +83,6 @@ function sumaDos(n) {
     }
     return parseInt(n) + 2;
 }
-console.log("Suma de 2 + 2 = ", sumaDos('2'));
-console.log("Suma de 2 + 8 = ", sumaDos(8));
-console.log("la suma de un string y un numeric en JS: ", '2' + 2);
-const product = {
-    created_at: '',
-    modified_at: '',
-    name: '',
-};
-const nDeFibo1 = 5;
-const nDeFibo2 = 5;
-function toNumber(s) {
-    if (!s) {
-        return 0;
-    }
-    return parseInt(s);
-}
-const n = toNumber(null);
-const m = toNumber(undefined);
-function getUser(id) {
-    if (id < 0) {
-        return null;
-    }
-    return {
-        id: 1,
-        name: 'orlando',
-        created_at: new Date()
-    };
-}
-const user = getUser(1);
-console.log('usuario', user === null || user === void 0 ? void 0 : user.created_at);
-if (user && user.created_at) {
-    console.log(user.created_at);
-}
-const arr1 = null;
-arr1 === null || arr1 === void 0 ? void 0 : arr1[0];
-console.log(arr1 === null || arr1 === void 0 ? void 0 : arr1[0]);
-const fn5 = null;
-fn5 === null || fn5 === void 0 ? void 0 : fn5();
-console.log(fn5 === null || fn5 === void 0 ? void 0 : fn5());
-function cb(fn) {
-    if (fn) {
-        fn();
-    }
-}
-const difficulty = 0;
-const user2 = {
-    username: "soy yo",
-    difficulty: difficulty !== null && difficulty !== void 0 ? difficulty : 1,
-};
-console.log(user2);
-const elem = null;
-const elem1 = elem;
-const input = document.getElementById('username');
-const input1 = document.getElementById('username');
+sumaDos('2');
+sumaDos(8);
 //# sourceMappingURL=index.js.map
